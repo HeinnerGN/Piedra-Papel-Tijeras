@@ -38,6 +38,9 @@ input{
     padding: 4%;
     margin: 3%;
 }
+input:hover{
+    color: red;
+}
 
 button{
     display: inline-block;
