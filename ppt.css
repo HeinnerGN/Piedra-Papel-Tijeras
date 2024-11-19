@@ -1,0 +1,63 @@
+body{
+    background-image: url(imgppt.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.contenedor{
+    margin: 2%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    height: 450px;
+}
+
+.content{
+    background-color: rgba(0, 255, 255, 0.26);
+    border: 2px solid rgba(15, 234, 99, 0.13);
+    width: 500px;
+    height: 300px;
+    margin-top: 5%;
+}
+
+h2{
+    font-family: monospace;
+    font-size: 30px;
+    color: purple;
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    border: 1px solid green;
+    border-radius: 20px;
+    position: relative;
+    left: 130px;
+    display: flex;
+    padding: 4%;
+    margin: 3%;
+}
+input:hover{
+    color: red;
+}
+
+button{
+    display: inline-block;
+    background-color: rgb(173, 17, 220);
+    color: cyan;
+    border: 2px solid rgb(0, 221, 255);
+    border-radius: 10px;
+    box-shadow: 10px green;
+    width: 20%;
+    padding: 5px;
+    margin-left: 39%;
+}
+button:hover{
+    background-color: blue;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
