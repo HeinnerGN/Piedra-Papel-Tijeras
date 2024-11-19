@@ -25,5 +25,7 @@ function iniciarsesion(){
 function jugar(){
     const opciones=['Piedra', 'Papel', 'Tijeras'];
     const opcionComputadora=opciones[Math.floor(Math.random() * opciones.length)];
+
+    let resultado=' ';
     
 }
