@@ -39,24 +39,29 @@ function iniciarsesion(){
 }
 
 function jugar(opcUsuario){
-    const opciones=['Piedra', 'Papel', 'Tijeras'];
-    const Computadora=opciones[Math.floor(Math.random() * opciones.length)];
+   const opciones = ['Piedra', 'Papel', 'Tijeras'];
+        const Computadora = opciones[Math.floor(Math.random() * opciones.length)];
+        let resultado=document.getElementById('resultado')
 
-    let resultado=' ';
-    
-    if(opcUsuario === Computadora){
-        resultado="Empate" + "Ambos eligieron" `${opcUsuario}`;
-    }
-    else if(
-        (opcUsuario === 'Piedra' && Computadora === 'Tijeras') ||
-        (opcUsuario === 'Papel' && Computadora === 'Piedra') ||
-        (opcUsuario === 'Tijeras' && Computadora === 'Papel')
-    ){
-        resultado= `¡Has Ganado! ${opcUsuario} vence a ${Computadora}`;
-    }
-    else{
-        resultado= `Has perdido ${Computadora} vence a ${opcUsuario}`;
-    }
-
-    document.getElementById('resultado').innerText=`La computadora ha elegido ${Computadora}\n${resultado}`;
+        if (opcUsuario == Computadora) {
+            resultado.textContent = "Empate"
+        }
+        else if (opcUsuario =="Piedra" && Computadora=="Tijeras") {
+            resultado.textContent = `¡Has Ganado! ${opcUsuario} vence a ${Computadora}`;
+        }
+        else if(opcUsuario == "Piedra" && Computadora == "Papel"){
+            resultado.textContent=`Has Perdido ${Computadora} vence a ${opcUsuario}`;
+        }
+        else if(opcUsuario == "Papel" && Computadora == "Tijeras"){
+            resultado.textContent =`Has Perdido ${Computadora} vence a ${opcUsuario}`;
+        }
+        else if(opcUsuario == "Piedra" && Computadora == "Tijeras"){
+            resultado.textContent =`¡Has Ganado! ${opcUsuario} vence a ${Computadora}`;
+        }
+        else if(opcUsuario == "Piedra" && Computadora == "Papel"){
+            resultado.textContent =`Has Perdido ${Computadora} vence a ${opcUsuario}`;
+        }
+        else if(opcUsuario == "Tijeras" && Computadora == "Papel"){
+            resultado.textContent=`¡Has Ganado! ${opcUsuario} vence a ${Computadora}`;
+        }
 }
