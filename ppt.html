@@ -9,24 +9,25 @@
     <body>
         <div class="contenedor">
             <div class="content">
-                <div id="registrar">
+                <div id="Registro">
                     <h2>Registro</h2>
                     <input id="nombre" placeholder="Registre nombre de usuario/coreo" required>
                     <input id="password" placeholder="Registre su contraseña" required>
-                    <button onclick="registrar()">Registrar</button>
+                    <button onclick="registrarusuario()">Registrar</button>
                 </div>
-                <div id="login" class="hidden">
+                <div id="Login" class="hidden">
                     <h2>Login</h2>
-                    <input type="text" id="nombre" placeholder="Ingrese nombre de usuario o correo electronico..." required>
-                    <input id="password" placeholder="Ingrese password..." required>
+                    <input id="nombrelogin" placeholder="Ingrese nombre de usuario o correo electronico" required>
+                    <input id="passwordlogin" placeholder="Ingrese password" required>
                     <button onclick="iniciarsesion()">Entrar</button>
                 </div>
-                <div id="juego" class="hidden">
+                <div id="Juego" class="hidden">
                     <h2>¡Bienvenido al juego!</h2>
                     <button onclick="jugar('piedra')">Piedra</button>
                     <button onclick="jugar('papel')">Papel</button>
                     <button onclick="jugar('tijeras')">Tijeras</button>
-                    <div id="resultado" class="result"></div>
+
+                    <div id="resultado"></div>
                 </div>
             </div>
         </div>
