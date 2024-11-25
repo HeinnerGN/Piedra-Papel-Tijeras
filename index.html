@@ -1,35 +1,38 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Registro PPT</title>
-        <link rel="stylesheet" href="ppt.css">
-        <script src="ppt.js"></script>
-    </head>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro PPT</title>
+    <link rel="stylesheet" href="ppt.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="content">
+            <div id="Registro">
+                <h2>Registro</h2>
+                <input id="nombre" placeholder="Registre nombre de usuario/correo" required>
+                <input id="password" type="password" placeholder="Registre su contraseña" required>
+                <button onclick="registrarusuario()">Registrar</button>
+            </div>
 
-    <body>
-        <div class="contenedor">
-            <div class="content">
-                <div id="Registro">
-                    <h2>Registro</h2>
-                    <input id="nombre" placeholder="Registre nombre de usuario/coreo" required>
-                    <input id="password" placeholder="Registre su contraseña" required>
-                    <button onclick="registrarusuario()">Registrar</button>
-                </div>
-                <div id="Login" class="hidden">
-                    <h2>Login</h2>
-                    <input id="nombrelogin" placeholder="Ingrese nombre de usuario o correo electronico" required>
-                    <input id="passwordlogin" placeholder="Ingrese password" required>
-                    <button onclick="iniciarsesion()">Entrar</button>
-                </div>
-                <div id="Juego" class="hidden">
-                    <h2>¡Bienvenido al juego!</h2>
-                    <button onclick="jugar('Piedra')">Piedra</button>
-                    <button onclick="jugar('Papel')">Papel</button>
-                    <button onclick="jugar('Tijeras')">Tijeras</button>
+            <div id="Login" class="hidden">
+                <h2>Login</h2>
+                <input id="nombrelogin" placeholder="Ingrese nombre de usuario o correo electrónico" required>
+                <input id="passwordlogin" type="password" placeholder="Ingrese contraseña" required>
+                <button onclick="iniciarsesion()">Entrar</button>
+            </div>
 
-                    <div id="resultado"></div>
-                </div>
+            <div id="Juego" class="hidden">
+                <h2>¡Bienvenido al juego!</h2>
+                <button id="piedra">Piedra</button>
+                <button id="papel">Papel</button>
+                <button id="tijeras">Tijeras</button>
+
+                <div id="resultado"></div>
             </div>
         </div>
-    </body>
+    </div>
+    <script src="ppt.js"></script>
+</body>
 </html>
